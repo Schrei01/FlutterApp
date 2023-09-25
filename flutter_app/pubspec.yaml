@@ -98,3 +98,6 @@ flutter:
         weight: 700
 
   #-------------------------Importar Imagenes--------------------------------#
+  assets: 
+    - assets/images
+    
