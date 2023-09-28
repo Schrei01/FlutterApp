@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/design/color.dart';
 import 'package:flutter_app/design/radius.dart';
+import 'package:flutter_app/pages/new_page.dart';
 import 'package:flutter_app/widgets/custom_money_display.dart';
 import 'package:flutter_app/widgets/home_app_title.dart';
 import 'package:flutter_app/widgets/summary_card.dart';
@@ -193,7 +194,8 @@ class CategoriesWidget extends StatelessWidget {
                 color: Color.fromRGBO(53, 97, 254, 1)),
           ),
           onPressed: () {
-            print('le diste clic a view all');
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => const NewPage()));
           },
         ),
         const ProductDetailCard(
