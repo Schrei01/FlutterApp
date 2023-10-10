@@ -3,6 +3,7 @@ import 'package:flutter_app/config/app_routes.dart';
 import 'package:flutter_app/design/themes.dart';
 import 'package:flutter_app/models/user.dart';
 import 'package:flutter_app/pages/home_page.dart';
+import 'package:flutter_app/pages/login_page.dart';
 import 'package:flutter_app/pages/new_page.dart';
 import 'package:flutter_app/pages/other_page.dart';
 
@@ -28,7 +29,7 @@ class App extends StatelessWidget {
                 builder: (context) =>
                     OtherPage(userData: settings.arguments as User));
           default:
-            return MaterialPageRoute(builder: (context) => HomePage());
+            return MaterialPageRoute(builder: (context) => const LogInOPage());
         }
       },
     );

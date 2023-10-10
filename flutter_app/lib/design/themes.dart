@@ -21,6 +21,18 @@ class AppThemes {
           color: AppColors.brandLightColor),
       headlineLarge:
           TextStyle(fontSize: 21.0, color: AppColors.brandPrimaryColor),
+      labelLarge: TextStyle(
+          fontSize: 30.0,
+          fontWeight: FontWeight.bold,
+          color: AppColors.brandPrimaryColor),
+      labelMedium: TextStyle(
+          fontSize: 20.0,
+          fontWeight: FontWeight.w400,
+          color: AppColors.brandLigthDarkColor),
+      labelSmall: TextStyle(
+          fontSize: 16.0,
+          fontWeight: FontWeight.bold,
+          color: AppColors.brandDarkColor),
       bodyLarge: TextStyle(fontSize: 14.0),
       bodyMedium: TextStyle(fontSize: 13.0),
       bodySmall: TextStyle(fontSize: 10.0),
