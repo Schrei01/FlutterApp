@@ -14,15 +14,15 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: AppThemes.defaultTheme,
-      // routes: {
-      //   AppRoutes.newPage: (context) => const NewPage(),
-      //   AppRoutes.otherPage: (context) => const OtherPage(),
-      //   AppRoutes.home: (context) => const HomePage(),
-      // },
       onGenerateRoute: (settings) {
         switch (settings.name) {
           case AppRoutes.newPage:
             return MaterialPageRoute(builder: (context) => NewPage());
+          case AppRoutes.home:
+            return MaterialPageRoute(
+                builder: (context) => HomePage(
+                      storeName: settings.arguments as String,
+                    ));
 
           case AppRoutes.otherPage:
             return MaterialPageRoute(

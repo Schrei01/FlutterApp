@@ -8,7 +8,8 @@ import 'package:flutter_app/widgets/summary_card.dart';
 import 'package:flutter_app/widgets/product_detail.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  final String storeName;
+  const HomePage({super.key, required this.storeName});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -45,9 +46,11 @@ class _HomePageState extends State<HomePage> {
             borderRadius: BorderRadius.only(
                 bottomLeft: AppRadius.small, bottomRight: AppRadius.small)),
         backgroundColor: AppColors.brandLightColor,
-        title: const Padding(
+        title: Padding(
             padding: EdgeInsets.fromLTRB(16, 45, 16, 12),
-            child: HomeAppBarTitle()),
+            child: HomeAppBarTitle(
+              storeName: widget.storeName,
+            )),
       ),
       body: Column(
         children: [
